@@ -95,7 +95,7 @@ const QuizGame = () => {
                             key={set.id}
                             onClick={() => setSelectedSetId(set.id)}
                             className="glass-panel"
-                            style={{ padding: '2rem', textAlign: 'left', cursor: 'pointer', transition: 'var(--transition-fast)' }}
+                            style={{ padding: '2rem', textAlign: 'left', cursor: 'pointer', transition: 'var(--transition-fast)', color: 'white' }}
                         >
                             <h3 style={{ margin: '0 0 0.5rem 0' }}>{set.title}</h3>
                             <p style={{ margin: 0, color: 'var(--color-text-muted)' }}>{set.cards.length} cards</p>
@@ -163,6 +163,7 @@ const QuizGame = () => {
                                     fontSize: '1.1rem',
                                     textAlign: 'center',
                                     transition: 'all 0.2s',
+                                    color: 'white',
                                     ...style
                                 }}
                                 disabled={!!selectedOption}
